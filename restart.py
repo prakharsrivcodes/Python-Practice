@@ -112,7 +112,8 @@ print(Employee.is_valid_position("Rocket Scientist")) # False
 
 
 
-# class method it is now used when we want to create a method that is dependent on the class itself rather than an instance of the class. It can be called directly on the class itself without creating an object. It takes the class as its first argument, which is conventionally named cls. This allows us to access and modify class-level attributes and methods.
+# class method it is now used when we want to create a method that is dependent on the class itself rather than an instance of the class. It can be called directly on the class itself without creating an object.
+# It takes the class as its first argument, which is conventionally named cls. This allows us to access and modify class-level attributes and methods.
 
 class Student:
 
@@ -148,7 +149,7 @@ print(Student.is_valid_gpa(12))     # Static Method
 
 
 # magic or dunder methods
-# BELAAAR HAI
+
 
 # PROPERTY GETTER SETTER
 class Student:
