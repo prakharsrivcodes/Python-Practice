@@ -175,3 +175,21 @@ print(s.marks)   # Getter
 s.marks = 95     # Setter
 
 s.marks = -10    # Setter   
+
+
+# DECORATORS
+# 1. Yeh hamara decorator function hai
+def add_sprinkles(func):
+    def wrapper(flavor):
+        print("🍦 Cone taiyar hai...") # Extra kaam pehle
+        func(flavor)                  # Original function chalaya
+        print("✨ Sprinkles daal diye!") # Extra kaam baad mein
+    return wrapper
+
+# 2. Decorator ko use karne ke liye bas function ke upar @ lagao
+@add_sprinkles
+def get_ice_cream(flavor):
+    print(f"🍨 Aapki {flavor} ice cream.")
+
+# 3. Function ko call karo
+get_ice_cream("vanilla")
